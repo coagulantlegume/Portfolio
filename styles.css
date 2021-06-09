@@ -1,12 +1,14 @@
 /* Master Styles */
 body {
     margin: 0px;
+    background-color: #121212;
 }
 
 .title {
     display: flex;
     justify-content: center;
     height: 150px;
+    background-color: slategray;
 }
 
 .brand {
@@ -43,6 +45,7 @@ body {
 .nav-wrapper {
     display: flex;
     justify-content: center;
+    background-color: black;
 }
 
 .nav-wrapper > div {
@@ -50,40 +53,88 @@ body {
     margin-left: 20px;
     margin-top: auto;
     margin-bottom: auto;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .nav-link-wrapper {
     height: 22px;
-    border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;
 }
 
 .nav-link-wrapper a {
-    color: #8a8a8a;
+    color: slategray;
     text-decoration: none;
     transition: color 0.5s;
 }
 
-.nav-link-wrapper:hover {
-    border-bottom: 1px solid black;
+.nav-link-wrapper a:hover {
+    color: white;
 }
 
-.nav-link-wrapper a:hover {
+.game-summary-body-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.game-summary-body-wrapper > div {
+    padding: 0;
+    margin: 0;
+}
+
+.splash-image-wrapper {
+    max-width: 100%;
+    margin: 0;
+}
+
+.gameplay-video-wrapper {
+    display: block;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+.game-nav-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: slategray;
+}
+
+.game-nav-wrapper > div {
+    padding: 30px 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+.game-nav-link-wrapper {
+    width: 400px;
+    transition: border-bottom 0.5s;
+}
+
+.game-nav-link-wrapper a {
     color: black;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.game-nav-link-wrapper a:hover {
+    color: white;
 }
 
 /* Portfolio Styles */
 
+.content-wrapper {
+    padding: 20px;
+}
+
 .portfolio-items-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 .portfolio-item-wrapper {
     position: relative;
-    height: 350px;
+    height: 300px;
     width: 100%;
 }
 
@@ -93,7 +144,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-origin:content-box;
@@ -112,6 +163,17 @@ body {
     padding-left: 100px;
     padding-right: 100px;
     text-align: center;
+}
+
+.portfolio-item-wrapper .portfolio-img-background{
+    transition: 1s;
+    filter: brightness(100%);
+}
+
+
+.portfolio-item-wrapper:hover .portfolio-img-background {
+    transition: 1s;
+    filter: brightness(10%);
 }
 
 .img-text-wrapper .title-wrapper {
@@ -133,14 +195,4 @@ body {
 .img-text-wrapper:hover .subtitle-wrapper {
     font-weight: 600;
     color: slategray;
-}
-
-.img-darken {
-    transition: 1s;
-    filter: brightness(10%);
-}
-
-.img-brighten {
-    transition: 1s;
-    filter: brightness(100%);
 }
