@@ -162,6 +162,24 @@ body {
     background-origin:content-box;
 }
 
+.display-item-wrapper {
+    position: relative;
+    height: 600px;
+    width: 100%;
+}
+
+.display-img-background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin:content-box;
+}
+
 .img-text-wrapper {
     position: absolute;
     top: 0;
@@ -184,6 +202,16 @@ body {
 
 
 .portfolio-item-wrapper:hover .portfolio-img-background {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+.display-item-wrapper .display-img-background{
+    transition: 1s;
+    filter: brightness(100%);
+}
+
+.display-item-wrapper:hover .display-img-background {
     transition: 1s;
     filter: brightness(10%);
 }
