@@ -71,20 +71,32 @@ body {
     color: white;
 }
 
-.game-summary-body-wrapper {
-    display: flex;
+.game-summary-wrapper {
     justify-content: center;
     padding: 0;
+    display: grid;
+    grid-template-columns: 1fr
 }
 
-.game-summary-body-wrapper > div {
-    padding: 0;
+.game-summary-wrapper > div {
     margin: 0;
+}
+
+.splash-item-wrapper {
+    position: relative;
+    width: 100%;
 }
 
 .splash-image-wrapper {
-    max-width: 100%;
-    margin: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin:content-box;
 }
 
 .gameplay-video-wrapper {
