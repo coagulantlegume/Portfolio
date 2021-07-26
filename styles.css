@@ -51,8 +51,8 @@ body {
 .nav-wrapper > div {
     margin-right: 20px;
     margin-left: 20px;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 20px;
 }
 
@@ -136,6 +136,7 @@ body {
 
 .content-wrapper {
     padding: 20px;
+    padding-top: 60px;
 }
 
 .portfolio-items-wrapper {

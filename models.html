@@ -4,32 +4,21 @@
         <meta charset="utf-8" />
         <title>Alec Wolf | 3D Art</title>
         <link rel="stylesheet" href="styles.css">
-        <link rel="icon" href="Images/InitialsLogo.png">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
 
     <body>
+        <div id="nav-placeholder">
+
+        </div>
+
+        <script>
+            $(function(){
+              $("#nav-placeholder").load("nav.html");
+            });
+        </script>
+
         <div class="container">
-            <div class="title">
-                <div class="brand">
-                    <div>Alec Wolf</div>
-                </div>
-                <div class="logo">
-                    <img src="Images/InitialsLogo.png" class="center" width=100px height=100px>
-                </div>
-            </div>
-
-            <div class="nav-wrapper">
-                <div class="nav-link-wrapper">
-                    <a href="index.html">About Me</a>
-                </div>
-                <div class="nav-link-wrapper">
-                    <a href="games.html">Game Projects</a>
-                </div>
-                <div class="nav-link-wrapper">
-                    <a href="models.html">3D Art</a>
-                </div>
-            </div>
-
             <div class="content-wrapper">
                 <div class="portfolio-items-wrapper">
                     <a href="ModelPages/chest.html">
