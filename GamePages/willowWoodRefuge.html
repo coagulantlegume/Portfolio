@@ -57,53 +57,94 @@
             <div class="game-description">
                 <div style="font-size:25px;"><p><center>My Contributions</center></p></div>
                 <p><div style="background-color:slategray;color:black;"><center><b>2D Physics Engine</b></center></div>
-                    <div class="topic-point"><p><span class="highlight">CollisionBox</span> – The basic physics component added to any physics object. Based on MonoGame.Extended.RectangleF class, contains all additional functionality necessary for platformer physics with custom collision and overlap events.</p></div>
-                    <div class="topic-point"><p><span class="highlight">Collision/Overlap info</span> – All information associated with a collision or overlap event, created and passed to event handlers when event called.</p></div>
-                    <div class="topic-point"><p><span class="highlight">PhysicsHandler</span> – The core class that handles all physics interactions with layers based on object labels and masks for collision and overlap with other objects.</p></div>
-                    <div class="topic-point"><p><span class="highlight">CellGrid</span> – Container used for PhysicsHandler layers in order to cull unnecessary comparisons in collision and overlap updates.</p></p></div>
+                    <div class="image-bank-wrapper" style="grid-template-columns: 1fr;">
+                        <div class="ref-image">
+                            <div class="ref-img-background" style="background-image:url(../Images/Games/WillowWoodRefuge/physics.gif)"></div>
+                        </div>
+                    </div>
+                    <div class="topic-point"><p><span class="highlight">CollisionBox</span> – The basic physics component added to any physics object. Based on MonoGame.Extended.RectangleF class, contains all additional functionality necessary for platformer physics with custom collision and overlap events.</div>
+                    <div class="topic-point"><p><span class="highlight">Collision/Overlap info</span> – All information associated with a collision or overlap event, created and passed to event handlers when event called.</div>
+                    <div class="topic-point"><p><span class="highlight">PhysicsHandler</span> – The core class that handles all physics interactions with layers based on object labels and masks for collision and overlap with other objects.</div>
+                    <div class="topic-point"><p><span class="highlight">CellGrid</span> – Container used for PhysicsHandler layers in order to cull unnecessary comparisons in collision and overlap updates.</div>
                 <br><p><div style="background-color:slategray;color:black;"><center><b>Idle NPC Dialogue System</b></center></div>
-                    <div class="topic-point"><p><span class="highlight">NPCDialogueSystem</span> – Core class for holding and managing all interactions, with functionality for weighted selection of possible interactions based on conditions. Reads and separates interactions from a tsv created by our writer, sending unparsed interactions to interaction class.</p></div>
-                    <div class="topic-point"><p><span class="highlight">NPCDialogueInteraction</span> – Class for a single interaction, with all relevant information and events. Parses information when loaded, sending unparsed individual line info to dialogue line class.</p></div>
-                    <div class="topic-point"><p><span class="highlight">NPCDialogueLine</span> – Class for a single line of dialogue. Contains the all relevant information for a single line of dialogue, parsed fully when loaded.</p></p></div>
+                    <div class="image-bank-wrapper" style="grid-template-columns: 1fr;">
+                        <div class="ref-image">
+                            <div class="ref-img-background" style="background-image:url(../Images/Games/WillowWoodRefuge/conversation.gif)"></div>
+                        </div>
+                    </div>
+                    <div class="topic-point"><p><span class="highlight">NPCDialogueSystem</span> – Core class for holding and managing all interactions, with functionality for weighted selection of possible interactions based on conditions. Reads and separates interactions from a tsv created by our writer, sending unparsed interactions to interaction class.</div>
+                    <div class="topic-point"><p><span class="highlight">NPCDialogueInteraction</span> – Class for a single interaction, with all relevant information and events. Parses information when loaded, sending unparsed individual line info to dialogue line class.</div>
+                    <div class="topic-point"><p><span class="highlight">NPCDialogueLine</span> – Class for a single line of dialogue. Contains the all relevant information for a single line of dialogue, parsed fully when loaded.</div>
                 <br><p><div style="background-color:slategray;color:black;"><center><b>AI Movement/Behavior</b></center></div>
-                    <div class="topic-point"><p><span class="highlight">NavMesh</span> – Class containing all relevant information about a character’s navigation map, including edges. Generated on construction.</p></div>
-                    <div class="topic-point"><p><span class="highlight">NavMap</span> – Class containing all possible navigation points, generated dynamically when entity is created based on collision box size and wall tile information.</p></div>
-                    <div class="topic-point"><p><span class="highlight">NavPoint</span> – Information about a single point with relevant tile and platform type information.</p></div>
-                    <div class="topic-point"><p><span class="highlight">BaseCharacter</span> – A basic abstract class for movement and animation behavior shared by all characters.</p></div>
-                    <div class="topic-point"><p><span class="highlight">AICharacter</span> – An abstract class inheriting from BaseCharacter for all behavior control and navigation shared by all AI characters. Uses a simple state machine for behavior.</p></div>
-                    <div class="topic-point"><p><span class="highlight">Enemy</span> – Class used by all enemy objects inheriting from AICharacter, with all relevant information to define individual monster types and behavior states with wandering, attacking, and cool down.</p></div>
-                    <div class="topic-point"><p><span class="highlight">NPC</span> – Refugee class inheriting from AICharacter with behavior states for wandering and conversing.</p></p></div>
+                    <div class="image-bank-wrapper" style="grid-template-columns: 1fr;">
+                        <div class="ref-image">
+                            <div class="ref-img-background" style="background-image:url(../Images/Games/WillowWoodRefuge/spiderAI.gif)"></div>
+                        </div>
+                    </div>
+                    <div class="topic-point"><p><span class="highlight">NavMesh</span> – Class containing all relevant information about a character’s navigation map, including edges. Generated on construction.</div>
+                    <div class="topic-point"><p><span class="highlight">NavMap</span> – Class containing all possible navigation points, generated dynamically when entity is created based on collision box size and wall tile information.</div>
+                    <div class="topic-point"><p><span class="highlight">NavPoint</span> – Information about a single point with relevant tile and platform type information.</div>
+                    <div class="topic-point"><p><span class="highlight">BaseCharacter</span> – A basic abstract class for movement and animation behavior shared by all characters.</div>
+                    <div class="topic-point"><p><span class="highlight">AICharacter</span> – An abstract class inheriting from BaseCharacter for all behavior control and navigation shared by all AI characters. Uses a simple state machine for behavior.</div>
+                    <div class="topic-point"><p><span class="highlight">Enemy</span> – Class used by all enemy objects inheriting from AICharacter, with all relevant information to define individual monster types and behavior states with wandering, attacking, and cool down.</div>
+                    <div class="topic-point"><p><span class="highlight">NPC</span> – Refugee class inheriting from AICharacter with behavior states for wandering and conversing.</div>
                 <br><p><div style="background-color:slategray;color:black;"><center><b>Tile Map System</b></center></div>
-                    <div class="topic-point"><p><span class="highlight">TileMap</span> – Extends the MonoGame.Extended.Tiled tile map loading and rendering classes to generate collision objects, populate spawn/forage points, world lights, and manage map entities.</p></div>
-                    <div class="topic-point"><p><span class="highlight">SpawnPoint</span> – Abstract class for all information common for game entity spawn locations, including type or range of types that can be spawned at given location.</p></div>
-                    <div class="topic-point"><p><span class="highlight">EnemySpawn</span> – Inherits from SpawnPoint, defining Spawn() to create a new enemy of given type at spawn point.</p></div>
-                    <div class="topic-point"><p><span class="highlight">ItemSpawn</span> – Inherits from SpawnPoint, defining Spawn() for a dropped item.</p></div>
-                    <div class="topic-point"><p><span class="highlight">ForageSpot</span> – Class containing all relevant texture and growth information for a foraging location of type given by the TileMap.</p></div>
-                    <div class="topic-point"><p><span class="highlight">ForageInfo</span> – Static class defining growth and name information for all possible foraging types.</p></div>
-                    <div class="topic-point"><p><span class="highlight">PickupItem</span> – Simple class for items that have been dropped, with collision and despawn timer.</p></p></div>
+                    <div class="image-bank-wrapper" style="grid-template-columns: 1fr;">
+                        <div class="ref-image" style="height: 400px;">
+                            <div class="ref-img-background" style="background-image:url(../Images/Games/WillowWoodRefuge/tileMap.PNG)"></div>
+                        </div>
+                    </div>
+                    <div class="topic-point"><p><span class="highlight">TileMap</span> – Extends the MonoGame.Extended.Tiled tile map loading and rendering classes to generate collision objects, populate spawn/forage points, world lights, and manage map entities.</div>
+                    <div class="topic-point"><p><span class="highlight">SpawnPoint</span> – Abstract class for all information common for game entity spawn locations, including type or range of types that can be spawned at given location.</div>
+                    <div class="topic-point"><p><span class="highlight">EnemySpawn</span> – Inherits from SpawnPoint, defining Spawn() to create a new enemy of given type at spawn point.</div>
+                    <div class="topic-point"><p><span class="highlight">ItemSpawn</span> – Inherits from SpawnPoint, defining Spawn() for a dropped item.</div>
+                    <div class="topic-point"><p><span class="highlight">ForageSpot</span> – Class containing all relevant texture and growth information for a foraging location of type given by the TileMap.</div>
+                    <div class="topic-point"><p><span class="highlight">ForageInfo</span> – Static class defining growth and name information for all possible foraging types.</div>
+                    <div class="topic-point"><p><span class="highlight">PickupItem</span> – Simple class for items that have been dropped, with collision and despawn timer.</div>
                 <br><p><div style="background-color:slategray;color:black;"><center><b>Stylized Shadow Shader</b></center></div>
-                    <div class="topic-point"><p><span class="highlight">LightManager</span> – Class managing static and dynamic light objects, as well as formatting arrays of data for the shader.</p></div>
-                    <div class="topic-point"><p><span class="highlight">AreaLight/DirectionalLight</span> – Classes for easily defining relevant information for a given light object.</p></div>
-                    <div class="topic-point"><p><span class="highlight">CastShadows</span> – A custom HLSL shader that casts rays from light sources given light info and occlusion mask to calculate light value of each given pixel, assigning the value to the alpha of the pixel. Smooth shadow render target is then drawn with a custom HLSL shader created by a teammate to map opacity to a dither spritesheet.</p></p></div>
+                    <div class="image-bank-wrapper" style="grid-template-columns: 1fr 1fr;">
+                        <div class="ref-image">
+                            <div class="ref-img-background" style="background-image:url(../Images/Games/WillowWoodRefuge/DitherLightingConcept.png)"></div>
+                        </div>
+                        <div class="ref-image">
+                            <div class="ref-img-background" style="background-image:url(../Images/Games/WillowWoodRefuge/SmoothLighting.png)"></div>
+                        </div>
+                    </div>
+                    <div class="topic-point"><p><span class="highlight">LightManager</span> – Class managing static and dynamic light objects, as well as formatting arrays of data for the shader.</div>
+                    <div class="topic-point"><p><span class="highlight">AreaLight/DirectionalLight</span> – Classes for easily defining relevant information for a given light object.</div>
+                    <div class="topic-point"><p><span class="highlight">CastShadows</span> – A custom HLSL shader that casts rays from light sources given light info and occlusion mask to calculate light value of each given pixel, assigning the value to the alpha of the pixel. Smooth shadow render target is then drawn with a custom HLSL shader created by a teammate to map opacity to a dither spritesheet.</div>
                 <br><p><div style="background-color:slategray;color:black;"><center><b>Stylized Weather Shaders (Not in current build)</b></center></div>
-                    <div class="topic-point"><p><span class="highlight">WeatherElement</span> – Abstract class for general information about a given type of weather common among all weather, including a generated noise texture.</p></div>
+                    <div class="image-bank-wrapper" style="grid-template-columns: 1fr 1fr;">
+                        <div class="ref-image">
+                            <div class="ref-img-background" style="background-image:url(../Images/Games/WillowWoodRefuge/rain.gif)"></div>
+                        </div>
+                        <div class="ref-image">
+                            <div class="ref-img-background" style="background-image:url(../Images/Games/WillowWoodRefuge/fog.gif)"></div>
+                        </div>
+                    </div>
+                    <div class="topic-point"><p><span class="highlight">WeatherElement</span> – Abstract class for general information about a given type of weather common among all weather, including a generated noise texture.</div>
                     <div class="topic-point"><p><span class="highlight">Rain</span> –
-                        <div class="topic-point2"><p><span class="highlight">C# class</span> – Generates a random noise texture and manages scroll of rain falling as well as direction.</p></div>
-                        <div class="topic-point2"><p><span class="highlight">Shader</span> – An HLSL shader that draws only the pixels above a given density value as the specified color.</p></p></div></div>
+                        <div class="topic-point2"><p><span class="highlight">C# class</span> – Generates a random noise texture and manages scroll of rain falling as well as direction.</div>
+                        <div class="topic-point2"><p><span class="highlight">Shader</span> – An HLSL shader that draws only the pixels above a given density value as the specified color.</div></div>
                     <div class="topic-point"><p><span class="highlight">Fog</span> –
-                        <div class="topic-point2"><p><span class="highlight">C# class</span> – Generates an OpenSimplex noise texture with horizontal wrap and manages horizontal scroll of fog.</p></div>
-                        <div class="topic-point2"><p><span class="highlight">Shader</span> – An HLSL shader that uses a vertical falloff and density to determine the opacity based on the noise texture of a given pixel, finally clamping opacity values based on a user defined step value and drawing pixel as specified color.</p></p></div></div>
-                    <div class="topic-point"><p><span class="highlight">TextureWrap</span> – An HLSL shader that draws a texture in a given space with a given offset, tiling to fill in the space. Used by both weather classes for continuous textures.</p></div>
+                        <div class="topic-point2"><p><span class="highlight">C# class</span> – Generates an OpenSimplex noise texture with horizontal wrap and manages horizontal scroll of fog.</div>
+                        <div class="topic-point2"><p><span class="highlight">Shader</span> – An HLSL shader that uses a vertical falloff and density to determine the opacity based on the noise texture of a given pixel, finally clamping opacity values based on a user defined step value and drawing pixel as specified color.</div></div>
+                    <div class="topic-point"><p><span class="highlight">TextureWrap</span> – An HLSL shader that draws a texture in a given space with a given offset, tiling to fill in the space. Used by both weather classes for continuous textures.</div>
                 <br><p><div style="background-color:slategray;color:black;"><center><b>Custom Camera Controller</b></center></div>
-                    <div style="margin-left:50px"><p>Extends the MonoGame.Extended.OrthographicCamera class to manage pixel dimensions of game world in both windowed and full screen views, as well as controlling camera movement with the player’s location, world bounds, and player bounds.</p></p></div>
+                    <div style="margin-left:50px"><p>Extends the MonoGame.Extended.OrthographicCamera class to manage pixel dimensions of game world in both windowed and full screen views, as well as controlling camera movement with the player’s location, world bounds, and player bounds.</div>
                 <br><p><div style="background-color:slategray;color:black;"><center><b>Custom Debugging Display</b></center></div>
-                    <div style="margin-left:50px"><p>A series of debug views that can be cycled between for both the game world camera overlay and a smaller mini-display of the entire current scene. States include camera debug, physics debug, AI debug, and player debug.</p></p></div>
+                    <div class="image-bank-wrapper" style="grid-template-columns: 1fr;">
+                        <div class="ref-image">
+                            <div class="ref-img-background" style="background-image:url(../Images/Games/WillowWoodRefuge/DebuggingCave.gif)"></div>
+                        </div>
+                    </div>
+                    <div style="margin-left:50px"><p>A series of debug views that can be cycled between for both the game world camera overlay and a smaller mini-display of the entire current scene. States include camera debug, physics debug, AI debug, and player debug.</div>
                 <br><p><div style="background-color:slategray;color:black;"><center><b>Sprite Font Manager</b></center></div>
-                    <div style="margin-left:50px"><p>Simple class managing the loaded in sprite fonts and adding functionality for formatted printing of text with different alignments and custom parsing for line breaks.</p></p></div>
+                    <div style="margin-left:50px"><p>Simple class managing the loaded in sprite fonts and adding functionality for formatted printing of text with different alignments and custom parsing for line breaks.</div>
                 <br><p><div style="background-color:slategray;color:black;"><center><b>Texture Atlas Manager</b></center></div>
-                    <div style="margin-left:50px"><p>An extension of the XNA Texture2D class, adding functionality for reading in a json file associated with a texture to generate a texture atlas. Contains functionality for different methods of drawing textures from atlas, as well as a default error texture.</p></p></div>
+                    <div style="margin-left:50px"><p>An extension of the XNA Texture2D class, adding functionality for reading in a json file associated with a texture to generate a texture atlas. Contains functionality for different methods of drawing textures from atlas, as well as a default error texture.</div>
                 <br><p><div style="background-color:slategray;color:black;"><center><b>Content Loading Scene</b></center></div>
-                    <div style="margin-left:50px"><p>A scene which uses the main graphics thread to display the amount of time spent loading and the current batch being loaded. ThreadPool is then used to load, initialize, and generate all game content, tracked by the main thread to give user feedback.</p></p></div>
+                    <div style="margin-left:50px"><p>A scene which uses the main graphics thread to display the amount of time spent loading and the current batch being loaded. ThreadPool is then used to load, initialize, and generate all game content, tracked by the main thread to give user feedback.</div>
             </div>
         </div>
     </body>

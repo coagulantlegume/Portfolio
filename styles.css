@@ -115,6 +115,31 @@ body {
     line-height: 2;
 }
 
+.image-bank-wrapper {
+    display: grid;
+    gap: 20px;
+    padding: 20px 10px 0px 0px;
+}
+
+.ref-image {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.ref-img-background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin:content-box;
+}
+
 .topic-point {
     margin-left: 150px;
     text-indent: -100px;
