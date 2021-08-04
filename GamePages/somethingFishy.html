@@ -5,9 +5,26 @@
         <title>Alec Wolf | Something Fishy</title>
         <link rel="stylesheet" href="../styles.css">
         <link rel="icon" href="../Images/InitialsLogo.png">
+
+        <style>
+			body { margin: 0; }
+			canvas { display: block; }
+		</style>
+
+		<!-- Load external libs-->
+		<script src="islandGenProto/three.js-master/build/three.js"></script>
+		<script src="islandGenProto/three.js-master/examples/js/controls/OrbitControls.js"></script>
+		<script src="islandGenProto/SimplexNoiseJS-master/simplexNoise.js"></script>
+
+		<!--- Load internal libs -->
+		<script src="islandGenProto/models/island.js"></script>
+		<script src="islandGenProto/particles.js"></script>
+
+		<!-- Load main -->
+		<script src="islandGenProto/main.js"></script>
     </head>
 
-    <body>
+    <body onload="main();" onresize="updateCanvas();">
         <div class="container">
             <div class="title">
                 <div class="brand">
@@ -119,6 +136,39 @@
                     </div>
                     <div style="margin-left:50px"><p>Created all UI, including value tracking and animation.</div>
                 <br><p><div style="background-color:slategray;color:black;"><center><b>Procedural Island Mesh Prototype (not currently in build)</b></center></div>
+                        Seed1:
+                        <input type="text" id="seed1" value="598564" onchange="island.ChangeSeed(1);island.RecalcGeometry();">
+		                &emsp;Zoom1:
+                        <input type="range" min="0.01" max="25.0" step="any" class="slider" id="seedZoom1" value="7.388" oninput="island.ChangeZoom(1);island.RecalcGeometry();">
+		                &emsp;Influence1:
+                        <input type="range" min="0" max="1.0" step="any" class="slider" id="seedScale1" value="0.626" oninput="island.ChangeScale(1);island.RecalcGeometry();">
+		                &emsp;&emsp;&emsp;&emsp;Wireframe: 
+		                <input type="checkbox" id="wireframe" onclick="island.SetWireframe()">
+		                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Cutoff: 
+		                <input type="range" min="0" max="1.0" step="any" class="slider" id="cutoff" value="0.181" oninput="island.ChangeCutoff();island.RecalcGeometry();">
+		                <br></br>
+		                Seed2:
+                        <input type="text" id="seed2" value="875945" onchange="island.ChangeSeed(2);island.RecalcGeometry();">
+		                &emsp;Zoom2:
+                        <input type="range" min="0.01" max="25.0" step="any" class="slider" id="seedZoom2" value="2.965" oninput="island.ChangeZoom(2);island.RecalcGeometry();">
+		                &emsp;Influence2:
+                        <input type="range" min="0" max="1.0" step="any" class="slider" id="seedScale2" value="0.123" oninput="island.ChangeScale(2);island.RecalcGeometry();">
+		                &emsp;&emsp;&emsp;&emsp;Top Height:
+		                &emsp;<input type="range" min="0" max="50.0" step="any" class="slider" id="maxHeightTop" value="20.0" oninput="island.ChangeTopHeight();">
+		                &emsp;Friends:
+		                <input type="checkbox" id="friends" onclick="friends()">
+		                <br></br>
+		                Seed3:
+                        <input type="text" id="seed3" value="237452" onchange="island.ChangeSeed(3);island.RecalcGeometry();">
+		                &emsp;Zoom3:
+                        <input type="range" min="0.01" max="25.0" step="any" class="slider" id="seedZoom3" value="1.022" oninput="island.ChangeZoom(3);island.RecalcGeometry();">
+		                &emsp;Influence3:
+                        <input type="range" min="0" max="1.0" step="any" class="slider" id="seedScale3" value="0.0098" oninput="island.ChangeScale(3);island.RecalcGeometry();">
+		                &emsp;&emsp;&emsp;&emsp;Height Falloff:
+		                <input type="range" min="0.8" max="10.0" step="any" class="slider" id="falloff" value="1.196" oninput="island.ChangeFalloff();">
+                        <div class="interactive">
+                            <canvas id="islandDemoCanvas" myattr="myattr" style="width: 100%; height: 100%; margin: auto;"></canvas>
+                        </div>
                     <div style="margin-left:50px"><p>Prototype for procedural algorithm to generate island meshes to be used in place of the current flat box for variation and platforming. Created with THREE.js library for WebGL.</div>
                 <br><br><br><br><br><br><p><div style="background-color:slategray;color:black;"><center><b>Additional Model Sources</b></center></div>
                     <div class="image-bank-wrapper" style="grid-template-columns: 1fr 1fr;">
