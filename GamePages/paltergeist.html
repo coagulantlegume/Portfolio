@@ -43,12 +43,51 @@
                 </div>
             </div>
 
+            <div class="game-description"><div style="font-size:25px;"><p><center>Team Size: 3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Duration: 5 Weeks &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Role: Lead Programmer</center></p></div>
+                <p><center>A 2D web-based puzzle game in which you play as a ghost who must use their scare energy to possess, move, and scale objects in an old mansion in order to help a child ascend through each floor and retrieve their lost balloon from the attic.<center></p>
+                <p><center>This project was developed in Phaser3 using JavaScript and GitHub for version control. This project also used the Matter.js physics library. As a shorter project with a team where we were all fairly new to game development, we really wanted to push what we were capable of but still keep a reasonable scope with backup plans for if we were unable to execute all of our desired features.</p></center>
+            </div>
+
             <div class="gameplay-video-wrapper">
                 <iframe width="640" height="360" 
                     src="https://www.youtube.com/embed/rWbosPqY0jg">
                 </iframe>
             </div>
 
+            <div class="game-description">
+                <div style="font-size:25px;"><p><center>My Contributions</center></p></div>
+                <br><p><div style="background-color:slategray;color:black;"><center><b>Custom Level System</b></center></div>
+                    <div class="image-bank-wrapper" style="grid-template-columns: 1fr;">
+                        <div class="ref-image">
+                            <div class="ref-img-background" style="background-image:url(../Images/Games/Paltergeist/levelChange.gif)"></div>
+                        </div>
+                    </div>
+                    <div style="margin-left:50px"><p>A system for loading in levels our designer created in JSON format as well as managing resources. Level sprite assets are loaded and displayed as they become visible with the ascent. When level is changed the physics calculation is disabled for the previous level and physics bodies are created and enabled for the new level.</div>
+                <br><p><div style="background-color:slategray;color:black;"><center><b>AI Finite State Machine</b></center></div>
+                    <div class="image-bank-wrapper" style="grid-template-columns: 1fr;">
+                        <div class="ref-image">
+                            <div class="ref-img-background" style="background-image:url(../Images/Games/Paltergeist/FSM.gif)"></div>
+                        </div>
+                    </div>
+                    <div style="margin-left:50px"><p>A simple state machine for the child character to wander the available space taking into account the obstructions the player moves around, run to hide and glance back frantically when scared by witnessing ghost activity, and run to the level exit when the path is cleared.</div>
+                <br><p><div style="background-color:slategray;color:black;"><center><b>Physics Wrangling</b></center></div>
+                    <div class="image-bank-wrapper" style="grid-template-columns: 1fr 1fr;">
+                        <div class="ref-image">
+                            <div class="ref-img-background" style="background-image:url(../Images/Games/Paltergeist/physics1.gif)"></div>
+                        </div>
+                        <div class="ref-image">
+                            <div class="ref-img-background" style="background-image:url(../Images/Games/Paltergeist/physics2.gif)"></div>
+                        </div>
+                    </div>
+                    <div style="margin-left:50px"><p>Setting up all of the physics objects that were generated, refactoring when switching from Phaser physics engine to Matter.js, and fiddling with variables for the best movement feeling with different scales.</div>
+                <br><p><div style="background-color:slategray;color:black;"><center><b>Character Movement</b></center></div>
+                    <div class="image-bank-wrapper" style="grid-template-columns: 1fr;">
+                        <div class="ref-image">
+                            <div class="ref-img-background" style="background-image:url(../Images/Games/Paltergeist/movement.gif)"></div>
+                        </div>
+                    </div>
+                    <div style="margin-left:50px"><p>The interpolation and direction changes used for the kid and the ghost’s movement to give the kid a solid, tangible feeling in the level and the ghost a light floaty feeling.</div>
+            </div>
         </div>
     </body>
 </html>
