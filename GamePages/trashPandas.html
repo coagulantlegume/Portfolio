@@ -43,10 +43,53 @@
                 </div>
             </div>
 
+            <div class="game-description"><div style="font-size:25px;"><p><center>Team Size: 8 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Duration: 3 Weeks &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Role: Lead Programmer</center></p></div>
+                <p><center>A pair of humans compete against a raccoon to gather the most trash from the neighborhood by using their unique abilities.<center></p>
+                <p><center>This was a digital adaptation of a board game designed by the same team of people. It was developed in Unity, doing our best to keep the scope small enough that we could make all of our assets ourselves and keep all of the functionality needed for the board game during the limited timeframe that the project was allowed.</p></center>
+            </div>
+
             <div class="gameplay-video-wrapper">
                 <iframe width="640" height="360" 
                     src="https://www.youtube.com/embed/6P5s7vG0U_A">
                 </iframe>
+            </div>
+
+            <div class="game-description">
+                <div style="font-size:25px;"><p><center>My Contributions</center></p></div>
+                <br><p><div style="background-color:slategray;color:black;"><center><b>Map Generation</b></center></div>
+                    <div class="image-bank-wrapper" style="grid-template-columns: 1fr 1fr;">
+                        <div class="ref-image">
+                            <div class="ref-img-background" style="background-image:url(../Images/Games/TrashPandas/maptxt.PNG)"></div>
+                        </div>
+                        <div class="ref-image">
+                            <div class="ref-img-background" style="background-image:url(../Images/Games/TrashPandas/map.gif)"></div>
+                        </div>
+                    </div>
+                    <div class="topic-point"><p><span class="highlight">HexMap</span> – Manages generating the hex map from a txt file, formatting the tile placement, and functions for interacting with the tile map. </div>
+                    <div class="topic-point"><p><span class="highlight">TileInfo</span> – Stores all information about the specific tile including its type, coordinate, and token occupant.</div>
+                <br><p><div style="background-color:slategray;color:black;"><center><b>Possible Path Finding</b></center></div>
+                    <div class="image-bank-wrapper" style="grid-template-columns: 1fr;">
+                        <div class="ref-image">
+                            <div class="ref-img-background" style="background-image:url(../Images/Games/TrashPandas/possibleMove.gif)"></div>
+                        </div>
+                    </div>
+                    <div style="margin-left:50px"><p>Calculates all tiles that the player could move to and highlighted given tiles, not allowing the user to select impossible moves.</div>
+                <br><p><div style="background-color:slategray;color:black;"><center><b>Audio Manager</b></center></div>
+                    <div style="margin-left:50px"><p>Simple audio driver that plays sound effects on given events.</div>
+                <br><p><div style="background-color:slategray;color:black;"><center><b>Camera Controller</b></center></div>
+                    <div class="image-bank-wrapper" style="grid-template-columns: 1fr;">
+                        <div class="ref-image">
+                            <div class="ref-img-background" style="background-image:url(../Images/Games/TrashPandas/camera.gif)"></div>
+                        </div>
+                    </div>
+                    <div style="margin-left:50px"><p>User input controller to manipulate camera at fixed angle with rotation, panning, and zoom.</div>
+                <br><p><div style="background-color:slategray;color:black;"><center><b>Player Movement</b></center></div>
+                    <div class="image-bank-wrapper" style="grid-template-columns: 1fr;">
+                        <div class="ref-image">
+                            <div class="ref-img-background" style="background-image:url(../Images/Games/TrashPandas/moving.gif)"></div>
+                        </div>
+                    </div>
+                    <div style="margin-left:50px"><p>Paths movement between start and destination with interpolated movement between tiles and piece rotation.</div>
             </div>
 
         </div>
