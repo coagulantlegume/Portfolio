@@ -43,10 +43,61 @@
                 </div>
             </div>
 
+            <div class="game-description"><div style="font-size:25px;"><p><center>Team Size: Solo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Duration: 1 Week</center></p></div>
+                <p><center>A 2 person co-op remake of Rocket Patrol where a rock and scissors must work together to take out paper airplanes while avoiding cloud obstacles.<center></p>
+                <p><center>This was a very short independent project based off of provided code replicating the game Rocket Patrol. Developed in Phaser3, my main goal was to step back from the coding I normally focus on and instead focus on asset creation and reworking the game mechanics.</p></center>
+            </div>
+
             <div class="gameplay-video-wrapper">
                 <iframe width="640" height="360" 
                     src="https://www.youtube.com/embed/dIbZBXF2i9E">
                 </iframe>
+            </div>
+
+            <div class="game-description">
+                <div style="font-size:25px;"><p><center>My Work</center></p></div>
+                <br><p><div style="background-color:slategray;color:black;"><center><b>Art and Sound Assets</b></center></div>
+                    <div class="image-bank-wrapper" style="grid-template-columns: 1fr 1fr 1fr; image-rendering: pixelated;">
+                        <div class="ref-image">
+                            <div class="ref-img-background" style="background-image:url(../Images/Games/RockPatrol/starfield.png)"></div>
+                        </div>
+                        <div class="ref-image">
+                            <div class="ref-img-background" style="background-image:url(../Images/Games/RockPatrol/rock.png)"></div>
+                        </div>
+                        <div class="ref-image">
+                            <div class="ref-img-background" style="background-image:url(../Images/Games/RockPatrol/clouds.png)"></div>
+                        </div>
+                    </div>
+                    <div class="image-bank-wrapper" style="grid-template-columns: 1fr 1fr 1fr 1fr; image-rendering: pixelated;">
+                        <div class="ref-image" style="height: 100px">
+                            <div class="ref-img-background" style="background-image:url(../Images/Games/RockPatrol/PlaneFly.gif)"></div>
+                        </div>
+                        <div class="ref-image" style="height: 100px">
+                            <div class="ref-img-background" style="background-image:url(../Images/Games/RockPatrol/PlaneExplode.gif)"></div>
+                        </div>
+                        <div class="ref-image" style="height: 100px">
+                            <div class="ref-img-background" style="background-image:url(../Images/Games/RockPatrol/RockExplode.gif)"></div>
+                        </div>
+                        <div class="ref-image" style="height: 100px">
+                            <div class="ref-img-background" style="background-image:url(../Images/Games/RockPatrol/ScissorsCut.gif)"></div>
+                        </div>
+                        
+                    </div>
+                    <div style="margin-left:50px"><p>All art and sound assets were created by me.</div>
+                <br><p><div style="background-color:slategray;color:black;"><center><b>Rock and Scissor Mechanic</b></center></div>
+                    <div class="image-bank-wrapper" style="grid-template-columns: 1fr;">
+                        <div class="ref-image">
+                            <div class="ref-img-background" style="background-image:url(../Images/Games/RockPatrol/rockscissors.gif)"></div>
+                        </div>
+                    </div>
+                    <div style="margin-left:50px"><p>Reworked the logic for the previous rocket launch to instead be dependent on a second actor, the scissors, overlapping and cutting in order to drop. </div>
+                <br><p><div style="background-color:slategray;color:black;"><center><b>Cloud Obstacles</b></center></div>
+                    <div class="image-bank-wrapper" style="grid-template-columns: 1fr;">
+                        <div class="ref-image">
+                            <div class="ref-img-background" style="background-image:url(../Images/Games/RockPatrol/clouds.gif)"></div>
+                        </div>
+                    </div>
+                    <div style="margin-left:50px"><p>Set up a system for randomly choosing and spacing a series of clouds to act as obstacles scrolling across the landscape with frequency based on difficulty. Also set up collision event to stop the rock and play an animation if the falling rock hits a cloud.</div>
             </div>
             
         </div>
