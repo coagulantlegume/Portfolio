@@ -309,6 +309,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 22px;
     padding: 40px;
+    text-align: center;
 }
 
 .about-item-wrapper {
